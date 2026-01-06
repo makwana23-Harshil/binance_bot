@@ -146,7 +146,6 @@ class OrderValidator:
             # For BUY stop-limit: stop_price > limit_price
             # For SELL stop-limit: stop_price < limit_price
             # This will be validated in the order placement logic
-        
         return len(self.errors) == 0
     
     def get_errors(self) -> list:
